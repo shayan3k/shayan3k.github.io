@@ -29,7 +29,7 @@ echo "Cleanup completed."
 cd "$app_dir"
 
 # build the app
-docker-compose exec app-vue-app-1 ls
+# docker compose -f docker-compose.yml exec vue-app npm run build
 
 # Check if the dist directory exists
 if [ -d "$dist_dir" ]; then
