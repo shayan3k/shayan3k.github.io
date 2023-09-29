@@ -3,7 +3,7 @@
     <div class="navContainer">
       <nav class="nav">
         <NuxtLink to="/" exact>HOME</NuxtLink>
-        <NuxtLink to="/portfolio" exact>PORTFOLIO</NuxtLink>
+        <!-- <NuxtLink to="/portfolio" exact>PORTFOLIO</NuxtLink> -->
         <NuxtLink to="/contact" exact>CONTACT</NuxtLink>
       </nav>
     </div>
