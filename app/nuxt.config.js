@@ -49,7 +49,7 @@ export default {
     "@nuxtjs/fontawesome",
     "@nuxtjs/color-mode",
   ],
-
+  host: "0.0.0.0",
   colorMode: {
     preference: "system", // default value of $colorMode.preference
     classSuffix: "",

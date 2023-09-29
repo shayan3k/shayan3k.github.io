@@ -5,7 +5,25 @@ app_dir="app"
 dist_dir="dist"
 
 
+# Check if 'deploy' file exists
+if [ -e deploy ]; then
+    echo "Preserving 'deploy' file."
+else
+    echo "Warning: 'deploy' file not found!"
+fi
 
+# Check if 'app' directory exists
+if [ -d app ]; then
+    echo "Preserving 'app' directory."
+else
+    echo "Warning: 'app' directory not found!"
+fi
+
+# Remove all files and directories except 'deploy' and 'app'
+shopt -s extglob
+rm -r !(deploy|app)
+
+echo "Cleanup completed."
 
 # go to the app directory
 cd "$app_dir"

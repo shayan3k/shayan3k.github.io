@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-200 dark:bg-gray-800 pt-3 px-4 md:px-2">
+  <div class="bg-gray-200 dark:bg-gray-800 pt-3 px-4 md:px-2" id="contact-page">
     <div class="relative container mx-auto flex justify-end items-center">
       <!--<button
         class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
@@ -307,10 +307,13 @@
               </h3>
               <br />
               <p class="mb-4 text-base">
-                Xemplo streamlines middle-office functions, reduces compliance
-                risk, and offers an exceptional experience for all stakeholders.
-                With Xemplo’s suite of features, from hiring to retiring,
-                all-in-one workforce management solution.
+                At Xemplo.com, innovation meets seamless functionality to
+                redefine the digital landscape. Through the state-of-the-art
+                services and products, Xemplo.com empowers clients to navigate
+                the complexities of the digital world with confidence. With a
+                focus on user-centric design and robust backend technologies,
+                Xemplo.com crafts digital experiences that captivate audiences
+                and drive meaningful engagement.
               </p>
               <h3>
                 <strong class="timeline__secondary-title text-blue">
@@ -319,34 +322,45 @@
               </h3>
               <ul class="list mb-3">
                 <li>
-                  Extend service endpoint using the best practices in Laravel
-                  with testing
+                  Extend service endpoints using industry best practices in
+                  Laravel, with a focus on comprehensive testing for robust
+                  functionality.
                 </li>
                 <li>
-                  Create or modify new UI isolated components in Vuejs based on
-                  a design
+                  Design and adapt isolated Vue.js components based on specified
+                  designs, ensuring seamless integration with the user
+                  interface.
                 </li>
                 <li>
-                  Data modeling and database design (tables, procedures,
-                  relationships, views and functions) for relational databases
-                  and model creation for NoSQL Databases
+                  Proficiently design tables, procedures, relationships, views,
+                  and functions for relational databases. Create models tailored
+                  for NoSQL databases, demonstrating a deep understanding of
+                  data structures.
                 </li>
                 <li>
-                  Work closely and collaborate with team lead and other members.
+                  Work closely with the team lead and fellow members, fostering
+                  a collaborative environment where ideas flow freely and
+                  collective goals are achieved.
                 </li>
                 <li>
-                  Ensure, through the development and use of coding standards
-                  that deployed code meets standards for technical delivery and
-                  maintainability.
+                  Uphold coding standards rigorously, guaranteeing that deployed
+                  code aligns with prescribed technical benchmarks and ensures
+                  long-term maintainability.
                 </li>
                 <li>
-                  Testing and debugging of the applications and rectifying the
-                  bugs, errors and mistakes.
+                  Thoroughly test applications, identifying and rectifying bugs,
+                  errors, and mistakes to enhance the overall quality and
+                  reliability of the software.
                 </li>
                 <li>
-                  Apply test automation frameworks and using them in a TDD
-                  approach. Ensuring applications are delivered in a timely
-                  manner in agile scrum-based projects.
+                  Implement and apply test automation frameworks, adopting a
+                  Test-Driven Development (TDD) approach to fortify the
+                  reliability of applications.
+                </li>
+                <li>
+                  Ensure timely delivery of applications within agile,
+                  scrum-based projects, contributing to the seamless flow of
+                  project milestones.
                 </li>
               </ul>
               <div
@@ -2248,11 +2262,9 @@
 <script lang="ts">
 import Vue from "vue";
 
-const item = "yes";
-
 export default Vue.extend({
   name: "CV",
-  layout: "CVLayout",
+  layout: "Resume",
   head() {
     return {
       title: "SHAYAN MOTALEBI - CV PAGE",
