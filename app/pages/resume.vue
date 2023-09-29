@@ -71,14 +71,16 @@
                     I love to {{ "<" }}Code{{ "/>" }} ツ
                   </h3>
                   <p class="timeline__description mb-4 text-base text-justify">
-                    A savvy and passionate full-stack web developer, fueled by
-                    an unwavering love for technology, and steeped in the
-                    artistry of Web Development. Solid skills in designing,
-                    enhancing, developing, deploying, and maintaining web and
-                    mobile applications. In-depth knowledge of the latest
-                    frameworks. Currently, working with languages
-                    <span class="text-darkgold">JAVASCRIPT</span> and,
-                    <span class="text-light-blue">PHP</span>.
+                    A proficient and enthusiastic full-stack web developer,
+                    driven by an unyielding passion for technology and deeply
+                    immersed in the craft of web development. Possesses robust
+                    expertise in conceiving, refining, constructing, deploying,
+                    and upholding web and mobile applications, complemented by a
+                    profound understanding of cutting-edge frameworks.
+                    Presently, actively engaged in projects utilizing
+                    <span class="text-darkgold">JAVASCRIPT</span> and
+                    <span class="text-light-blue">PHP</span> as primary
+                    programming languages.
                   </p>
                 </li>
               </ol>
