@@ -94,9 +94,12 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-
+  // router: {
+  //   base: "/app/",
+  // },
   build: {
     extractCSS: true,
+    publicPath: "/_nuxt/",
 
     /*
      ** You can extend webpack config here
