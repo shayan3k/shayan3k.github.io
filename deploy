@@ -12,6 +12,13 @@ else
     echo "Warning: 'deploy' file not found!"
 fi
 
+# Check if '.nojekyll' directory exists
+if [ -e .nojekyll ]; then
+    echo "Preserving 'app' directory."
+else
+    echo "Warning: 'app' directory not found!"
+fi
+
 # Check if 'app' directory exists
 if [ -d app ]; then
     echo "Preserving 'app' directory."

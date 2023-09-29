@@ -8,7 +8,7 @@ export default {
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: process.env.npm_package_description || "SHAYAN MOTALEBI",
+    title: "SHAYAN MOTALEBI",
     htmlAttrs: {
       lang: "en",
     },
