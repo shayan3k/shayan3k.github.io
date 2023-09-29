@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Define the paths to the app and dist directories
+app_dir="app"
+dist_dir="dist"
+
+
+
+
+# go to the app directory
+cd "$app_dir"
+
+# build the app
+npx nuxt build
+
+# Check if the dist directory exists
+if [ -d "$dist_dir" ]; then
+    # Copy all files from dist to the parent directory of app
+    cp -r "${dist_dir}/"* "$(dirname "$app_dir")/.."
+    cp -r "${dist_dir}/"* "$(dirname "$app_dir")/.."
+    echo "Files copied successfully."
+else
+    echo "The 'dist' directory does not exist in '$app_dir'."
+fi
+
+
+# go back to the parent directory
+cd ".."
+
+# update repository
+git add .
+git commit -m 'update-resume'
+git push --set-upstream origin master
+
