@@ -29,7 +29,7 @@ echo "Cleanup completed."
 cd "$app_dir"
 
 # build the app
-npx nuxt build
+docker-compose exec app-vue-app-1 ls
 
 # Check if the dist directory exists
 if [ -d "$dist_dir" ]; then
