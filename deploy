@@ -12,11 +12,11 @@ else
     echo "Warning: 'deploy' file not found!"
 fi
 
-# Check if 'Resume' file exists
-if [ -e Resume ]; then
-    echo "Preserving 'Resume' file."
+# Check if 'resume.pdf' file exists
+if [ -e resume.pdf ]; then
+    echo "Preserving 'resume.pdf' file."
 else
-    echo "Warning: 'Resume' file not found!"
+    echo "Warning: 'resume.pdf' file not found!"
 fi
 
 # Check if '.nojekyll' directory exists

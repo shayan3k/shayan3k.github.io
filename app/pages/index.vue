@@ -82,7 +82,7 @@ export default Vue.extend({
   },
   data() {
     return {
-      resume: "https://resume.motalebi.me",
+      resume: "https://shayan3k.github.io/resume.pdf",
     };
   },
 });
