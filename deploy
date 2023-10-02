@@ -1,63 +1,63 @@
-#!/bin/bash
+# #!/bin/bash
 
-# Define the paths to the app and dist directories
-app_dir="app"
-dist_dir="dist"
-
-
-# Check if 'deploy' file exists
-if [ -e deploy ]; then
-    echo "Preserving 'deploy' file."
-else
-    echo "Warning: 'deploy' file not found!"
-fi
-
-# Check if 'resume.pdf' file exists
-if [ -e resume.pdf ]; then
-    echo "Preserving 'resume.pdf' file."
-else
-    echo "Warning: 'resume.pdf' file not found!"
-fi
-
-# Check if '.nojekyll' directory exists
-if [ -e .nojekyll ]; then
-    echo "Preserving 'app' directory."
-else
-    echo "Warning: 'app' directory not found!"
-fi
-
-# Check if 'app' directory exists
-if [ -d app ]; then
-    echo "Preserving 'app' directory."
-else
-    echo "Warning: 'app' directory not found!"
-fi
-
-# Remove all files and directories except 'deploy' and 'app'
-shopt -s extglob
-rm -r !(deploy|app)
-
-echo "Cleanup completed."
-
-# go to the app directory
-cd "$app_dir"
-
-# build the app
-docker compose -f docker-compose.yml exec vue-app npm run generate
-
-# Check if the dist directory exists
-if [ -d "$dist_dir" ]; then
-    # Copy all files from dist to the parent directory of app
-    cp -r "${dist_dir}/"* "$(dirname "$app_dir")/.."
-    cp -r "${dist_dir}/"* "$(dirname "$app_dir")/.."
-    echo "Files copied successfully."
-else
-    echo "The 'dist' directory does not exist in '$app_dir'."
-fi
+# # Define the paths to the app and dist directories
+# app_dir="app"
+# dist_dir="dist"
 
 
-# go back to the parent directory
-cd ".."
+# # Check if 'deploy' file exists
+# if [ -e deploy ]; then
+#     echo "Preserving 'deploy' file."
+# else
+#     echo "Warning: 'deploy' file not found!"
+# fi
+
+# # Check if 'resume.pdf' file exists
+# if [ -e resume.pdf ]; then
+#     echo "Preserving 'resume.pdf' file."
+# else
+#     echo "Warning: 'resume.pdf' file not found!"
+# fi
+
+# # Check if '.nojekyll' directory exists
+# if [ -e .nojekyll ]; then
+#     echo "Preserving 'app' directory."
+# else
+#     echo "Warning: 'app' directory not found!"
+# fi
+
+# # Check if 'app' directory exists
+# if [ -d app ]; then
+#     echo "Preserving 'app' directory."
+# else
+#     echo "Warning: 'app' directory not found!"
+# fi
+
+# # Remove all files and directories except 'deploy' and 'app'
+# shopt -s extglob
+# rm -r !(deploy|app)
+
+# echo "Cleanup completed."
+
+# # go to the app directory
+# cd "$app_dir"
+
+# # build the app
+# docker compose -f docker-compose.yml exec vue-app npm run generate
+
+# # Check if the dist directory exists
+# if [ -d "$dist_dir" ]; then
+#     # Copy all files from dist to the parent directory of app
+#     cp -r "${dist_dir}/"* "$(dirname "$app_dir")/.."
+#     cp -r "${dist_dir}/"* "$(dirname "$app_dir")/.."
+#     echo "Files copied successfully."
+# else
+#     echo "The 'dist' directory does not exist in '$app_dir'."
+# fi
+
+
+# # go back to the parent directory
+# cd ".."
 
 # update repository
 git add .
