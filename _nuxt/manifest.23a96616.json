@@ -1,0 +1,10 @@
+{
+  "name": "shayan_motalebi_resume",
+  "short_name": "shayan_motalebi_resume",
+  "icons": [],
+  "start_url": "/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#440813",
+  "lang": "en"
+}
